@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev2_3_HTML-Vertiefung_Forms</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Register form</legend>
+                <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td><input type="text" name="surname" id="surname" placeholder="Surname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">Male
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Picture</label></td>
+                    <td><input type="file" name="pic" id="pic"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select>
+                            <option>Germany</option>
+                            <option>Spain</option>
+                            <option>France</option>
+                        </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td><label for="prefer">Preferred Languages</label></td>
+                    <td>
+                        <select multiple="multiple">  -> Für mehrere elemente
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JS</option>
+                        </select>
+                        <label for="info">(To choose more than one use cmd key)</label>
+                        </td>
+                </tr>
+                <tr>
+                    <td><label for="activityField">Field of Activity</label></td>
+                    <td>
+                        <input type="checkbox" name="activityField" id="activityField">IT
+                        <input type="checkbox" name="activityField" id="activityField">Design
+                        <input type="checkbox" name="activityField" id="activityField">Other
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit" value="Submit">
+                        <input type="reset" id="reset" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+            
+
+            </fieldset>
+            
+    </main>
+</body>
+</html>
